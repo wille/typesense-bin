@@ -1,1 +1,4 @@
 typesense-server-*.tar.gz
+pkg/
+src/
+typesense-bin-*.tar.zst

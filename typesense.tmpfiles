@@ -1,1 +1,3 @@
-d /var/lib/typesense 0750 typesense typesense
+d /var/lib/typesense 0700 typesense typesense
+d /etc/typesense 0755 typesense typesense
+f /etc/typesense/typesense-server.ini 0640 typesense typesense

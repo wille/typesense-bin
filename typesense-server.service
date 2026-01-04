@@ -10,9 +10,8 @@ Group=typesense
 Type=simple
 Restart=on-failure
 
-Environment=TYPESENSE_API_KEY=xyz
 SyslogIdentifier=typesense-server
-ExecStart=/usr/lib/typesense-server --data-dir /var/lib/typesense --api-key xyz --enable-cors
+ExecStart=/usr/bin/typesense-server --config=/etc/typesense/typesense-server.ini
 
 PrivateDevices=true
 ProtectHome=true
@@ -29,7 +28,7 @@ CapabilityBoundingSet=
 NoNewPrivileges=yes
 
 WorkingDirectory=/var/lib/typesense
-ReadWritePaths=/tmp /var/tmp /var/lib/typesense
+ReadWritePaths=/tmp /var/tmp /var/lib/typesense /etc/typesense
 
 [Install]
 WantedBy=multi-user.target
