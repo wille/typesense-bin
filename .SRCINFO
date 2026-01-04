@@ -1,7 +1,7 @@
 pkgbase = typesense-bin
 	pkgdesc = A fast, typo-tolerant search engine for building delightful search experiences.
 	pkgver = 29.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/typesense/typesense
 	arch = x86_64
 	arch = aarch64
@@ -15,7 +15,7 @@ pkgbase = typesense-bin
 	sha256sums = ef4b613a67e00db11e419fbbbab704c878fd9cc91ac9b55bb47d13ffe4326c31
 	sha256sums = be5d6252e0239e98f30273ae272aa101385b4fe51d00abdd3534eb3d50658528
 	sha256sums = efd39e4aaa4acd14c0eece9b4090781939972d4ee5303e86162752d96706aac0
-	sha256sums = 3110ab9de7492be4db1ba728fe118905bd8ac3679876eec0011603b5e1b3681c
+	sha256sums = 55596bc915fd5e89712a53f6ceb66b486570b972014f09f18bb5fa72e27b5410
 	source_x86_64 = https://dl.typesense.org/releases/29.0/typesense-server-29.0-linux-amd64.tar.gz
 	sha256sums_x86_64 = 043d2a13574454a5543f03b67cc3b448c5e2c06f5d0f444c9c0ce45598ad14a0
 	source_aarch64 = https://dl.typesense.org/releases/29.0/typesense-server-29.0-linux-arm64.tar.gz
