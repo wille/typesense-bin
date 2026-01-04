@@ -1,7 +1,7 @@
 pkgbase = typesense-bin
 	pkgdesc = A fast, typo-tolerant search engine for building delightful search experiences.
 	pkgver = 29.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/typesense/typesense
 	arch = x86_64
 	arch = aarch64
