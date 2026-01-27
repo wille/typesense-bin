@@ -1,8 +1,8 @@
 # Maintainer: William Sandström <w.sandstrom@gmail.com>
 _pkgroot=typesense
 pkgname="${_pkgroot}-bin"
-pkgver=29.0
-pkgrel=3
+pkgver=30.0
+pkgrel=1
 pkgdesc="A fast, typo-tolerant search engine for building delightful search experiences."
 arch=('x86_64' 'aarch64')
 url="https://github.com/typesense/typesense"
@@ -16,14 +16,8 @@ sha256sums=('ef4b613a67e00db11e419fbbbab704c878fd9cc91ac9b55bb47d13ffe4326c31'
             'be5d6252e0239e98f30273ae272aa101385b4fe51d00abdd3534eb3d50658528'
             'efd39e4aaa4acd14c0eece9b4090781939972d4ee5303e86162752d96706aac0'
             '55596bc915fd5e89712a53f6ceb66b486570b972014f09f18bb5fa72e27b5410')
-sha256sums_x86_64=('043d2a13574454a5543f03b67cc3b448c5e2c06f5d0f444c9c0ce45598ad14a0')
-sha256sums_aarch64=('ced8c2c8adb7efcb60f724fd0fa3eba08365313e46c942041fc76e1e2bc24361')
-
-prepare() {
-    cd "${srcdir}"
-    _apikey=$(head -c 32 /dev/urandom | base64 | tr -dc 'a-zA-Z0-9' | head -c 32)
-    sed -i "s/api-key = changeme/api-key = ${_apikey}/" typesense-server.ini
-}
+sha256sums_x86_64=('a6d11c2e60f03f7a18a6eec785584767b1d0dac2babb0879212f6ac1a5faa02d')
+sha256sums_aarch64=('eaf3fa8133eec64068bf4212e093027fd86dff979fce6243194b6965158296fb')
 
 package() {
     cd "${srcdir}"
